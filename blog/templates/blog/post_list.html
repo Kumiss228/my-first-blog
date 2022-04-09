@@ -1,15 +1,20 @@
 <html>
     <head>
-        <title>Продажа спермы! Недорого!!!</title>
+        <title>Форум по продаже спермы</title>
     </head>
     <body>
         <div>
-        <h1>Продажа и скупка спермы!</h1>
+          <div>
+      <h1><a href="/">Django Girls Blog</a></h1>
+  </div>
+
+  {% for post in posts %}
+      <div>
+          <p>published: {{ post.published_date }}</p>
+          <h1><a href="">{{ post.title }}</a></h1>
+          <p>{{ post.text|linebreaksbr }}</p>
+      </div>
+  {% endfor %}
         </div>
-        <br>
-        <ul><li>50мл-500р</li><li>100мл-950р</li><li>500мл-8500р</li></ul>
-        <br>
-        <strong>По поводу покупки писать в лс в вк:</strong>
-        <a href="https://vk.com/anime_parasha">link</a>
     </body>
 </html>
